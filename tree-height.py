@@ -31,6 +31,9 @@ class Tree:
 
     def search(self, target):
         return self.root.search(target)
+    
+    def height(self):
+        return self.root.height()
 
 
 tree = Tree(Node(50), 'A Very Tall Tree')
@@ -44,7 +47,7 @@ tree.root.left.left.left = Node(5)
 tree.root.left.left.right = Node(13)
 tree.root.left.left.left.left = Node(2)
 
-print(tree.root.height())
+print(tree.height())
 
 tree= Tree(Node(50), 'A Very Short Tree')
-print(tree.root.height())
+print(tree.height())
